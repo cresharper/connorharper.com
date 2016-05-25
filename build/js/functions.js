@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".text-boxes").hide(0).delay(50).fadeIn(1e3)});

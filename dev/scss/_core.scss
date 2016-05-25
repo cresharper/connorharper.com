@@ -1,0 +1,78 @@
+/*CORE STYLING*/
+
+#side-section {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 3rem;
+	background-color: $main-color;
+	height: 100%;
+}
+
+.site-content {
+	margin-left: 14rem;
+}
+
+.site-section {
+	margin-top: 5rem;
+	margin-left: 40px;
+}
+
+.main-nav {
+
+	font-family: sans-serif;
+
+	li {
+		font-family: 'Catamaran', sans-serif;
+		font-weight: 600;
+		font-size: 1.5rem;
+		padding-bottom: 3rem;
+		text-transform: uppercase;
+	}
+
+	a {
+		text-decoration: none;
+		color: #fff;
+		transition: linear 0.2s;
+		&:hover {
+			background-color: #268200;
+		}
+	}
+}
+
+#main-fold {
+	text-align: center;
+	h1 {
+		font-family: 'Raleway', sans-serif;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 4rem;
+		font-size: 42px;
+	}
+}
+
+.main-fold__headshot {
+	width: 30%;
+	border-radius: 100%;
+}
+
+.main-fold__links {
+
+	padding-top: 2rem;
+	a {
+		text-transform: capitalize;
+		text-decoration: none;
+		font-family: 'Catamaran', sans-serif;
+		color: $main-color;
+		border: 1px solid $main-color;
+		margin: 25px;
+		padding: 2px 20px;
+		border-radius: 9px;
+		transition: linear 0.2s;
+		&:hover {
+			color: $white;
+			background-color: $main-color;
+		}
+	}
+}
+

@@ -1,0 +1,64 @@
+//portfolio
+
+#portfolio {
+	h2 {
+		font-family: 'Raleway', sans-serif;
+		font-size: 24px;
+		text-align: center;
+	}
+}
+
+.item {
+  float: left;
+  margin: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.item-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  color: #ffffff;
+  padding-top: 20px;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.item-info-anime {
+  top: -100%;
+  left: 0;
+}
+
+.item:hover .item-info {
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.item-info h4 {
+  padding-top: 100px;
+}
+
+.mobile-item-view {
+	display: none;
+}
+
+
+//responsive
+
+@media only screen and (max-width : 992px) {
+  .item-info-anime {
+    display: none;
+  }
+
+  .mobile-item-view {
+    display: block;
+    padding-bottom:15px;
+    margin:20px;
+  }
+}
