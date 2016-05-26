@@ -13,6 +13,10 @@
 	text-align: center;
 }
 
+.item-header {
+	@extend .sub-header;
+}
+
 .paragraph {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
