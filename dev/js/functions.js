@@ -56,7 +56,7 @@ $(document).ready(function() {
 
     //mobile menu 
 	$(".mobile-menu-toggle").click(function() {
-		$("#side-section").toggle();
+		$("#side-section").toggle("fast");
 	});
 });
 
