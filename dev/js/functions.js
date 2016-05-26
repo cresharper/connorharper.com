@@ -5,8 +5,6 @@ $(document).ready(function(){
     $("#main-fold").hide(0).delay(50).fadeIn(1000)
 });
 
-
-
 //email form/validation
 $(document).ready(function() {
     $("#submit_btn").click(function(e) { 
@@ -54,6 +52,12 @@ $(document).ready(function() {
         $(this).css('border-color',''); 
         $("#result").slideUp();
     });
+
+
+    //mobile menu 
+	$(".mobile-menu-toggle").click(function() {
+		$("#side-section").toggle();
+	});
 });
 
 
