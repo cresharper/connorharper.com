@@ -25,6 +25,7 @@
 .site-section {
 	margin-top: 5rem;
 	margin-left: 40px;
+	margin-right: 40px;
 }
 
 .main-nav {
@@ -88,6 +89,11 @@
 			background-color: $main-color;
 		}
 	}
+}
+
+.skill-list {
+	@extend .paragraph;
+	text-align: center;
 }
 
 .mobile-menu-toggle {
