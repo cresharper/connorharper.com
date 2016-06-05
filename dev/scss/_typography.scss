@@ -16,6 +16,7 @@
 
 .item-header {
 	@extend .sub-header;
+	margin-bottom: 35px;
 }
 
 .paragraph {
@@ -26,5 +27,5 @@
 }
 
 .paragraph--item-info {
-	padding: 3rem;
+	margin: -30px 30px 25px;
 }

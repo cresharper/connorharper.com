@@ -5,7 +5,7 @@ $(document).ready(function(){
     $("#main-fold").hide(0).delay(50).fadeIn(1000)
 });
 
-//email form/validation
+//email form/validation and mobile menu
 $(document).ready(function() {
     $("#submit_btn").click(function(e) { 
 
@@ -56,7 +56,13 @@ $(document).ready(function() {
 
     //mobile menu 
 	$(".mobile-menu-toggle").click(function() {
+        var menushowing = $("#side-section").css("display");
 		$("#side-section").toggle("fast");
+        if (menushowing == "block") {
+            $(".mobile-menu-toggle--close").css("z-index", "1");
+        } else {
+            $(".mobile-menu-toggle--close").css("z-index", "3");
+        }
 	});
 });
 

@@ -1,6 +1,7 @@
 //contact form 
 
 input[required=true] {
+	width: 100% !important;
 	font-family: 'Raleway', sans-serif;
 	font-size: 24px;
 	color: #333;
@@ -9,11 +10,20 @@ input[required=true] {
 	padding: 20px;
 }
 
+.form-wrapper {
+	width: 80%;
+	margin: 0;
+}
+
+#contact {
+	h2, p {
+		text-align: left;
+	}
+}
+
 #contact_form {
-	padding-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%
 }
 
 #message {
@@ -22,10 +32,10 @@ input[required=true] {
 	padding: 20px;
 	width: 725px;
 	height: 300px;
+	width: 100% !important;
 }
 
 .paragraph-contact-form {
 	text-align: center;
 	padding-top: 20px;
 }
-
