@@ -43,4 +43,11 @@ input[required=true] {
 .success {
 	@extend .paragraph;
 	padding-bottom: 25px;
+	font-weight: bold;
+	color: $green-color;
+}
+
+.error {
+	@extend .success;
+	color: $red-color;
 }
