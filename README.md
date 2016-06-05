@@ -11,6 +11,6 @@
 * portfolio updates
 * "slicker" more modern looking menu
 * more materialistic approach to overall design, less "templatey"
-* adding "easter eggs" for developers when they inspect my site in dev tools
+* adding an "easter egg" for developers when they view my site source
 
 
