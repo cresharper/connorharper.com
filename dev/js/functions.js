@@ -65,13 +65,8 @@ $(document).ready(function() {
         }
 
         $(".menu-item").click(function() {
-            var menushowing = $("#side-section").css("display");
-            $("#side-section").toggle("fast");
-            if (menushowing == "block") {
-                $(".mobile-menu-toggle--close").css("z-index", "1");
-            } else {
-                $(".mobile-menu-toggle--close").css("z-index", "3");
-            }
+            $("#side-section").hide();
+            $(".mobile-menu-toggle--close").css("z-index", "1");
         });
 	});
 
