@@ -13,4 +13,6 @@
 * more materialistic approach to overall design, less "templatey"
 * adding an "easter egg" for developers when they view my site source
 
+(this repo is for the nav re-factor)
+
 
