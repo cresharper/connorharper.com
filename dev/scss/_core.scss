@@ -1,6 +1,6 @@
 /*CORE STYLING*/
 
-#side-section {
+.side-section {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -97,7 +97,7 @@
 }
 
 @media screen and (max-width: 767px) {
-	#side-section {
+	.side-section {
 		display: none;
 		z-index: 1;
 	}

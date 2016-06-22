@@ -57,18 +57,24 @@ $(document).ready(function() {
 //version 1
 $(".mobile-toggle").on("click", ".mobile-toggle--open, .mobile-toggle--close", function() {
 
-    $("#side-section").toggle("fast")
-
     if ($(".mobile-toggle").hasClass("mmt-open")) {
         $(".mobile-toggle").removeClass("mmt-open")
     } else {
         $(".mobile-toggle").addClass("mmt-open")
     }
+
+    if ($(".side-section").hasClass("side-section--show")) {
+        $(".side-section").removeClass("side-section--show")
+    } else {
+        $(".side-section").addClass("side-section--show")
+    }
+
 });
 
 
 $(".menu-item").click(function() {
-    $("#side-section").toggle("fast");
+    $(".side-section").removeClass("side-section--show");
+    $(".mobile-toggle").removeClass("mmt-open");
 });
 
 }); //main closer for all functions
