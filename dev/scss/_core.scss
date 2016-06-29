@@ -100,6 +100,9 @@
 	.side-section {
 		display: none;
 		z-index: 1;
+		transition: 0.2s ease;
+		-webkit-transition: 0.2s ease;
+		transition: 0.2s ease;
 	}
 
 	.side-section--show {
@@ -120,24 +123,29 @@
 		text-decoration: none;
 		font-weight: bold;
 		padding: 30px;
-		color: $white;
 		background-color: $green-color;
 		font-family: 'Raleway', sans-serif;
 		font-size: 18px;
 	}
 
-	.mobile-toggle--close {
-		display: none;
+	.mobile-toggle--button {
 		text-decoration: none;
 		text-align: center;
 		font-weight: bold;
+		color: $white;
+	}
+
+	.mobile-toggle--close {
+		display: none;
+		@extend .mobile-toggle--button;
+		
 	}
 
 	.mobile-toggle--open {
 		display: block;
+		@extend .mobile-toggle--button;
 	}	
 
-	//toggle menu ro
 	.mmt-open {
 
 		.mobile-toggle--close {
@@ -157,13 +165,5 @@
 	.main-header {
 		padding-top: 5.7rem;
 	}
-
-	// input[required=true] {
-	// 	width: 100% !important;
-	// }
-
-	// #message {
-	// 	width: 100% !important;
-	// }
 }
 
