@@ -1,6 +1,6 @@
 /*CORE STYLING*/
 
-#side-section {
+.side-section {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -96,24 +96,24 @@
 	text-align: center;
 }
 
-.mobile-menu-toggle {
-	display: none;
-}
-
 @media screen and (max-width: 767px) {
-	#side-section {
+	.side-section {
 		display: none;
 		z-index: 1;
+	}
+
+	.side-section--show {
+		display: block;
 	}
 
 	.site-content {
 		margin: 0;
 	}
 
-	.mobile-menu-toggle {
+	.mobile-toggle {
 		position: fixed;
 		display: block;
-		z-index: 1;
+		z-index: 2;
 		width: 50px;
 		text-align: left;
 		text-transform: uppercase;
@@ -126,13 +126,28 @@
 		font-size: 18px;
 	}
 
-	.mobile-menu-toggle--close {
-		position: fixed;
-		top: 0;
-		left: 0;
-		padding: 30px !important;
+	.mobile-toggle--close {
+		display: none;
+		text-decoration: none;
 		text-align: center;
 		font-weight: bold;
+	}
+
+	.mobile-toggle--open {
+		display: block;
+	}	
+
+	//toggle menu ro
+	.mmt-open {
+
+		.mobile-toggle--close {
+			display: block;
+		}
+
+		.mobile-toggle--open {
+			display: none;
+		}
+
 	}
 
 	.main-nav {

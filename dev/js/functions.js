@@ -54,23 +54,30 @@ $(document).ready(function() {
     });
 
 
-    //mobile menu 
-	$(".mobile-menu-toggle").click(function() {
-        var menushowing = $("#side-section").css("display");
-		$("#side-section").toggle("fast");
-        if (menushowing == "block") {
-            $(".mobile-menu-toggle--close").css("z-index", "1");
-        } else {
-            $(".mobile-menu-toggle--close").css("z-index", "3");
-        }
+//version 1
+$(".mobile-toggle").on("click", ".mobile-toggle--open, .mobile-toggle--close", function() {
 
-        $(".menu-item").click(function() {
-            $("#side-section").hide();
-            $(".mobile-menu-toggle--close").css("z-index", "1");
-        });
-	});
+    if ($(".mobile-toggle").hasClass("mmt-open")) {
+        $(".mobile-toggle").removeClass("mmt-open")
+    } else {
+        $(".mobile-toggle").addClass("mmt-open")
+    }
+
+    if ($(".side-section").hasClass("side-section--show")) {
+        $(".side-section").removeClass("side-section--show")
+    } else {
+        $(".side-section").addClass("side-section--show")
+    }
 
 });
+
+
+$(".menu-item").click(function() {
+    $(".side-section").removeClass("side-section--show");
+    $(".mobile-toggle").removeClass("mmt-open");
+});
+
+}); //main closer for all functions
 
 
 //smooth scroll
