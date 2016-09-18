@@ -64,6 +64,9 @@
 #main-fold {
 	text-align: center;
 	padding-bottom: 5rem;
+	background-image: url(/img/main-fold.jpg);
+	background-size: cover;
+	height: 720px;
 }
 
 .main-fold__headshot {
@@ -78,22 +81,31 @@
 		text-transform: capitalize;
 		text-decoration: none;
 		font-family: 'Catamaran', sans-serif;
-		color: $main-color;
-		border: 1px solid $main-color;
+		font-size: 18px;
+		color: $white;
+		border: 1px solid $white;
 		margin: 25px;
 		padding: 2px 20px;
 		border-radius: 9px;
 		transition: linear 0.2s;
 		&:hover {
-			color: $white;
-			background-color: $main-color;
+			color: $main-color;
+			background-color: $white;
 		}
 	}
+}
+
+.main-cta {
+	padding-top: 5rem;
 }
 
 .skill-list {
 	@extend .paragraph;
 	text-align: center;
+}
+
+.mobile-toggle {
+	display: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -158,12 +170,22 @@
 
 	}
 
+	#main-fold {
+		height: 580px;
+		background-size: cover;
+	}
+
 	.main-nav {
 		margin-top: 5rem;
+		li {
+			margin-bottom: 1rem;
+		}
 	}
 
 	.main-header {
+		font-size: 30px;
 		padding-top: 5.7rem;
+		border: none;
 	}
 }
 

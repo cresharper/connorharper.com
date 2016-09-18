@@ -10,6 +10,9 @@
   margin: 0px;
   position: relative;
   overflow: hidden;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .item-info {
@@ -49,6 +52,10 @@
 //responsive
 
 @media only screen and (max-width : 992px) {
+  .item {
+    width: 100%;
+  }
+
   .item-info-anime {
     display: none;
   }
