@@ -1,4 +1,5 @@
 //portfolio
+//comment
 
 #portfolio {
   h2 {
@@ -8,6 +9,7 @@
 
 .item {
   margin: 0px;
+  padding-bottom: 3rem;
   position: relative;
   overflow: hidden;
   width: 60%;
@@ -41,7 +43,7 @@
 }
 
 .item-info h4 {
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 .mobile-item-view {
@@ -51,7 +53,7 @@
 
 //responsive
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 1110px) {
   .item {
     width: 100%;
   }
