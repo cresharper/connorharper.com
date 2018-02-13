@@ -2,7 +2,13 @@
 
 //loading in transition
 $(document).ready(function(){
-    $("#main-fold").hide(0).delay(50).fadeIn(1000)
+    $(".main-fold").hide(0).delay(10).fadeIn(1000)
+});
+
+$(document).ready(function(){
+    particlesJS.load('particles-js', '../build/js/particles.json', function() {
+        console.log('callback - particles.js config loaded WEEEEE');
+    });
 });
 
 //email form/validation and mobile menu
@@ -63,17 +69,17 @@ $(".mobile-toggle").on("click", ".mobile-toggle--open, .mobile-toggle--close", f
         $(".mobile-toggle").addClass("mmt-open")
     }
 
-    if ($(".side-section").hasClass("side-section--show")) {
-        $(".side-section").removeClass("side-section--show")
+    if ($(".menu-section").hasClass("menu-section--show")) {
+        $(".menu-section").removeClass("menu-section--show")
     } else {
-        $(".side-section").addClass("side-section--show")
+        $(".menu-section").addClass("menu-section--show")
     }
 
 });
 
 
 $(".menu-item").click(function() {
-    $(".side-section").removeClass("side-section--show");
+    $(".menu-section").removeClass("menu-section--show");
     $(".mobile-toggle").removeClass("mmt-open");
 });
 

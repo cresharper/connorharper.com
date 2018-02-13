@@ -1,25 +1,29 @@
 /*CORE STYLING*/
 
-.side-section {
-	position: fixed;
+.menu-section {
 	top: 0;
 	left: 0;
-	padding: 3rem;
-	background-color: $main-color;
 	height: 100%;
 }
 
-.side-section__social-media-links {
+#particles-js {
+	position: absolute;
+	width: 100%;
+    height: 100%;
+    max-height: $home-hero-height;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.menu-section__social-media-links {
 	position: fixed;
 	bottom: 20px;
 	li {
 		display: inline-block;
 		padding-right: 20px;
 	}
-}
-
-.site-content {
-	margin-left: 14rem;
 }
 
 .site-section {
@@ -29,20 +33,25 @@
 }
 
 .main-nav {
-
-	font-family: sans-serif;
+	position: absolute;
+	z-index: 9;
+	width: 100%;
+    text-align: center;
+    padding-top: 2rem;
 
 	li {
-		font-family: 'Catamaran', sans-serif;
+		display: inline-block;
+		font-family: 'Open Sans', sans-serif;
 		font-weight: 600;
 		font-size: 1.5rem;
 		margin-bottom: 3rem;
+		padding-right: 4rem;
 		text-transform: uppercase;
 	}
 
 	a {
 		text-decoration: none;
-		font-style: italic;
+		font-weight: 100;
 		color: #fff;
 		padding: 8px;
 	}
@@ -57,16 +66,18 @@
 	-webkit-transform: skew(-20deg);
 	   -moz-transform: skew(-20deg);
 	     -o-transform: skew(-20deg);
-	     background-color: $green-color;
 	}
 }
 
-#main-fold {
+.main-fold {
 	text-align: center;
 	padding-bottom: 5rem;
 	background-image: url(/img/main-fold.jpg);
 	background-size: cover;
-	height: 720px;
+	background-attachment: fixed;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+	height: $home-hero-height;
 }
 
 .main-fold__headshot {
@@ -74,29 +85,9 @@
 	border-radius: 100%;
 }
 
-.main-fold__links {
-
-	padding-top: 2rem;
-	a {
-		text-transform: capitalize;
-		text-decoration: none;
-		font-family: 'Catamaran', sans-serif;
-		font-size: 18px;
-		color: $white;
-		border: 1px solid $white;
-		margin: 25px;
-		padding: 2px 20px;
-		border-radius: 9px;
-		transition: linear 0.2s;
-		&:hover {
-			color: $main-color;
-			background-color: $white;
-		}
-	}
-}
-
 .main-cta {
-	padding-top: 5rem;
+	padding-top: 12rem;
+	z-index: 3;
 }
 
 .skill-list {
@@ -109,7 +100,7 @@
 }
 
 @media screen and (max-width: 767px) {
-	.side-section {
+	.menu-section {
 		display: none;
 		z-index: 1;
 		transition: 0.2s ease;
@@ -117,7 +108,7 @@
 		transition: 0.2s ease;
 	}
 
-	.side-section--show {
+	.menu-section--show {
 		display: block;
 	}
 
@@ -126,16 +117,13 @@
 	}
 
 	.mobile-toggle {
-		position: fixed;
+		position: absolute;
 		display: block;
+		top: 10px;
 		z-index: 2;
 		width: 50px;
-		text-align: left;
-		text-transform: uppercase;
-		text-decoration: none;
-		font-weight: bold;
-		padding: 30px;
-		background-color: $green-color;
+		margin: 10px;
+		background-color: #fff;
 		font-family: 'Raleway', sans-serif;
 		font-size: 18px;
 	}
@@ -170,7 +158,7 @@
 
 	}
 
-	#main-fold {
+	.main-fold {
 		height: 580px;
 		background-size: cover;
 	}
