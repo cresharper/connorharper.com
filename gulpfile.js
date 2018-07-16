@@ -19,7 +19,10 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('styles', function() {
-	return sass('dev/scss/*.scss')
+	return sass('dev/scss/*.scss', {
+		noCache: true,
+		style: 'compressed'
+	})
 	.pipe(cleanCSS())
 	.pipe(gulp.dest('build/css'))
 	.pipe(browserSync.stream());

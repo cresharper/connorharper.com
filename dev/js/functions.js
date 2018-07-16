@@ -5,11 +5,11 @@ $(document).ready(function(){
     $(".main-fold").hide(0).delay(10).fadeIn(1000)
 });
 
-$(document).ready(function(){
-    particlesJS.load('particles-js', '../build/js/particles.json', function() {
-        console.log('callback - particles.js config loaded WEEEEE');
-    });
-});
+// $(document).ready(function(){
+//     particlesJS.load('particles-js', '../build/js/particles.json', function() {
+//         console.log('particles.js config loaded');
+//     });
+// });
 
 //email form/validation and mobile menu
 $(document).ready(function() {
