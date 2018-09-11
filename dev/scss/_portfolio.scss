@@ -12,7 +12,7 @@
   display: inline-block;
   position: relative;
   overflow: hidden;
-  width: 33%;
+  width: 24%;
 }
 
 .item:hover .item-info, .item.hover .item {
@@ -20,7 +20,6 @@
 }
 
 .item, .item-info-front, .item-info-back {
-  width: 320px;
   height: 480px;
 }
 
@@ -46,6 +45,7 @@
 }
 
 .item-info-back {
+  width: 100%;
   transform: rotateY(180deg);
 }
 
