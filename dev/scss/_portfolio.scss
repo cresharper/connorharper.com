@@ -8,38 +8,38 @@
 }
 
 .item {
-  margin: 0px;
-  padding-bottom: 3rem;
+  display: inline-block;
   position: relative;
   overflow: hidden;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 33%;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .item-info {
   position: absolute;
+  top: 0;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,.8);
   color: #ffffff;
   padding-top: 20px;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  animation: fadeInOpacity 1s fade-in;
 }
 
 .item-info-anime {
-  top: -120%;
-  left: 0;
+  display: none;
 }
 
 .item:hover .item-info {
-  top: 0;
-  left: 0;
-  -webkit-transition: all 0.25s ease-out;
-  -moz-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  display: block;
 }
 
 .item-info h4 {
