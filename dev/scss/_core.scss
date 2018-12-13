@@ -1,5 +1,11 @@
 /*CORE STYLING*/
 
+@keyframes arrowAnimation {
+	0% { bottom: 5rem; }
+  	50% { bottom: 1.8rem; }
+  	100% { bottom: 5rem; }
+}
+
 .menu-section {
 	top: 0;
 	left: 0;
@@ -39,7 +45,7 @@
 	width: 100%;
     text-align: center;
     padding-top: 2rem;
-	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.27);;
 	li {
 		display: inline-block;
 		font-family: 'Open Sans', sans-serif;
@@ -71,14 +77,29 @@
 }
 
 .main-fold {
+	position: relative;
 	text-align: center;
 	padding-bottom: 5rem;
-	background-image: url(/img/april-shot.jpg);
-	background-size: cover;
+	// background-image: url(/img/april-shot.jpg);
+	// background-size: cover;
+	background-color: gray;
 	background-attachment: fixed;
 	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 	height: $home-hero-height;
+}
+
+.main-cta_down-arrow {
+	position: absolute;
+	bottom: 5rem;
+	border: solid #fff;
+  	border-width: 0 3px 3px 0;
+  	display: inline-block;
+  	padding: 20px;
+  	transform: rotate(45deg);
+  	-webkit-transform: rotate(45deg);
+
+  	animation: arrowAnimation 2.5s infinite;
 }
 
 .main-fold__headshot {

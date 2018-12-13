@@ -2,7 +2,7 @@
 
 //loading in transition
 $(document).ready(function(){
-    $(".main-fold").hide(0).delay(10).fadeIn(1000)
+    $(".site-content").hide(0).delay(10).fadeIn(1000)
 });
 
 // $(document).ready(function(){
