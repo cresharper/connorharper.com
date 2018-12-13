@@ -85,8 +85,7 @@ $(".menu-item").click(function() {
 
 $(".visit-site-button").click(function(e) {
     e.preventDefault();
-    var projectName = $(this).data("link");
-    $("*[data-project=" + projectName + "]").fadeIn();
+    $("*[data-project=" + $(this).data("link") + "]").fadeIn();
 })
 
 $(".item-close-x").click(function() {
