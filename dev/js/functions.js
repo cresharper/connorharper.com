@@ -83,6 +83,17 @@ $(".menu-item").click(function() {
     $(".mobile-toggle").removeClass("mmt-open");
 });
 
+$(".visit-site-button").click(function(e) {
+    e.preventDefault();
+    var projectName = $(this).data("link");
+    $("*[data-project=" + projectName + "]").fadeIn();
+})
+
+$(".item-close-x").click(function() {
+    $(".portfolio-item-overlay").fadeOut();
+    console.log("hide overlay")
+})
+
 }); //main closer for all functions
 
 

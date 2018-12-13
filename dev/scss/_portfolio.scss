@@ -74,9 +74,17 @@
     background-color: #fff;
 
     .item-close-x {
-      font-weight: light;
-      font-size: 15px;
+      font-family: raleway, sans-serif;
+      font-size: 18px;
+      &:hover {
+        cursor: pointer;
+      }
     }
+}
+
+.portfolio-content {
+  margin: 3rem 300px;
+  overflow-y: scroll;
 }
 
 
